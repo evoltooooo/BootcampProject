@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url(assets/Product\ Sans\ Regular.ttf);
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url(assets/Metropolis-Regular.otf);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #E5E5E5;
+}
+
+.container {
+    max-width: 1440px;
+    height: 995px;
+    background: #f3f3f3;
+    position: relative;
+    margin: 0 auto;
+
+    overflow: hidden;
+}
+
+.profilepicture {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 1280px;
+    top: 40px;
+
+    background: url(assets/Ellipse\ 1.png);
+}
+
+.vectorgroup1 {
+    position: absolute;
+    width: 522px;
+    height: 679px;
+    left: 0px;
+    top: 0px;
+    
+    mix-blend-mode: multiply;
+    opacity: 0.1;
+    
+    background: url(assets/Group.png);
+}
+
+.vectorgroup2 {
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    left: 1002.87px;
+    top: -138px;
+
+    mix-blend-mode: multiply;
+    opacity: 0.1;
+    transform: rotate(189deg);
+
+    background: url(assets/Group.png);
+}
+
+.icon {
+    position: absolute;
+    width: 111px;
+    height: 65px;
+    left: 100px;
+    top: 39px;
+
+    background: url(assets/Frame.png);
+}
+
+nav ul {
+    float: left;
+    position: absolute;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;                
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 60px;
+                    
+    display: block;
+    
+    color: #000000;
+}
+
+nav ul li ul {
+    display: block;
+    position: absolute;
+    width: 210px;
+    right: 0px;
+    align-items: center;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 12px;
+    visibility: hidden;
+}
+
+nav ul li:hover ul{
+    visibility: visible;
+}
+
+nav ul li ul li {
+    left: 10px;
+    top: 10px;
+}
+
+.productgroup {
+    position: absolute;
+width: 660px;
+height: 279px;
+left: 195px;
+top: 240px;
+
+}
+
+.line1 {
+    position: absolute;
+    width: 660px;
+    height: 0px;
+    left: 0px;
+    top: 34px;
+
+    border: 1px solid #393939;
+}
+
+.line2 {
+    position: absolute;
+    width: 660px;
+    height: 0px;
+    left: 0px;
+    bottom: 0px;
+
+    border: 1px solid #393939;
+}
+
+.cartbook {
+    position: absolute;
+    width: 130px;
+    height: 175.5px;
+    left: 195px;
+    top: 305px;
+
+    background: url(assets/cartbook.svg);
+    border-radius: 1px;
+}
+
+.trash {
+    position: absolute;
+    width: 18px;
+    height: 20px;
+    left: 835px;
+    top: 300px;
+
+    background: url(assets/trash.svg);
+}
+
+.transactionbox {
+    position: absolute;
+    width: 260px;
+    height: 150px;
+    left: 992px;
+    top: 270px;
+}
+
+.transaction {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 260px;
+    height: 150px;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(196, 196, 196, 0.2);
+    border: 2px dashed #000000;
+}
+
+.cashpayment {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 85px;
+    top: 15.5px;
+
+    background: url(assets/cash-payment\ 1.svg);
+}
+
+.paybox {
+    position: absolute;
+    width: 260px;
+    height: 40px;
+    left: 992px;
+    top: 445px;
+
+    background: url(assets/Checkout.svg);
+}
+
+.popupmessage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, 0.7);
+    transition: all 0.4s;
+    visibility: hidden ;
+    opacity: 0;
+}
+
+.popupmessage:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popupmessagecontent {
+    position: relative;
+    width: 742px;
+    height: 142px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+}

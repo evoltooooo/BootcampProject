@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: url(assets/Product\ Sans\ Regular.ttf);
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url(assets/Metropolis-Regular.otf);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #E5E5E5;
+}
+
+.container {
+    max-width: 1440px;
+    height: 1397px;
+    background: #f3f3f3;
+    position: relative;
+    margin: 0 auto;
+
+    overflow: hidden;
+}
+
+.cart {
+    position: absolute;
+    width: 41px;
+    height: 33px;
+    left: 1209px;
+    top: 54.37px;
+
+    background: url(assets/Group\ 10.png);
+}
+
+.profilepicture {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 1280px;
+    top: 40px;
+
+    background: url(assets/Ellipse\ 1.png);
+}
+
+.headerpage {
+    position: flex;
+    width: 1440px;
+    height: 652px;
+    left: 0px;
+    top: 0px;
+
+    background: #f3f3f3;
+}
+
+.vectorgroup1 {
+    position: absolute;
+    width: 522px;
+    height: 679px;
+    left: 0px;
+    top: 0px;
+    
+    mix-blend-mode: multiply;
+    opacity: 0.1;
+    
+    background: url(assets/Group.png);
+}
+
+.vectorgroup2 {
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    left: 1002.87px;
+    top: -138px;
+
+    mix-blend-mode: multiply;
+    opacity: 0.1;
+    transform: rotate(189deg);
+
+    background: url(assets/Group.png);
+}
+
+.icon {
+    position: absolute;
+    width: 111px;
+    height: 65px;
+    left: 100px;
+    top: 39px;
+
+    background: url(assets/Frame.png);
+}
+
+.bookcover {
+    position: absolute;
+    width: 400px;
+    height: 577px;
+    left: 262px;
+    top: 142px;
+
+    background: url(assets/Rectangle\ 9cover.png);
+    border-radius: 10px;
+}
+
+.addtocartbutton{
+    position: absolute;
+    width: 144px;
+    height: 50px;
+    left: 1001px;
+    top: 1292px;
+}
+
+.addtocartbox {
+    position: absolute;
+    width: 144px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+
+    background: #393939;
+    border-radius: 1px;
+}
+
+.smallcart {
+    position: absolute;
+    width: 23.87px;
+    height: 22px;
+    left: 103px;
+    top: 12px;
+
+    background: url(assets/Vectorsmall.png);
+}
+
+nav ul {
+    float: left;
+    position: absolute;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;                
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    line-height: 60px;
+                    
+    display: block;
+    
+    color: #000000;
+}
+
+nav ul li ul {
+    display: block;
+    position: absolute;
+    width: 210px;
+    right: 0px;
+    align-items: center;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 12px;
+    visibility: hidden;
+}
+
+nav ul li:hover ul{
+    visibility: visible;
+}
+
+nav ul li ul li {
+    left: 10px;
+    top: 10px;
+}
